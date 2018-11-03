@@ -1,3 +1,5 @@
 var data = new Date();
+var dataString = "Hello! Today is " + data.getDay() + "." + data.getMonth() + "." + data.getFullYear() + " " + data.getHours() + ":" + data.getMinutes() + ".";
+console.log(dataString);
 
-console.log("Hello! Today is " + data.getDay() + "." + data.getMonth() + "." + data.getFullYear() + " " + data.getHours() + ":" + data.getMinutes() + "." );
+document.getElementById("dataHello").innerHTML = dataString;
